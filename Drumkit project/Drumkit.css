@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+}
+
+.drumkit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 35vh;
+}
+
+
+.pad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex: 1 0 calc(10% - 20px);
+    background: radial-gradient(rgb(0, 109, 109), rgb(98, 0, 255));
+    border-radius: 15px;
+}
+/* ----------------------------------------------------------------- */
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 15vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.keys {
+    border: .4rem solid rgb(0, 0, 0);
+    border-radius: .5rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07 ease;
+    width: 75rem;
+    text-align: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 0 1rem yellow;
+}
